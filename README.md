@@ -1,7 +1,9 @@
 ## Usage
 
+Take a Screenshot
 `GET /fire.png?url=http://facebook.com&width=1280&height=800`
 
+App Stats
 `GET /stats.json`
 
 ## Development
