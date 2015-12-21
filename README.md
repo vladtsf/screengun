@@ -1,19 +1,19 @@
-== Usage ==
+## Usage
 
 `GET /fire.png?url=http://facebook.com&width=1280&height=800`
 `GET /stats.json`
 
-== Development ==
+## Development
 
 `node index.js`
 
-== Production ==
+## Production
 
 `gem install foreman`
 `foreman start -c web=12`
 
 [more about Foreman](http://blog.daviddollar.org/2011/05/06/introducing-foreman.html)
 
-== Dependencies ==
+## Dependencies
 
 Phantom.JS
