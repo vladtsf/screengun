@@ -1,6 +1,7 @@
 ## Usage
 
 `GET /fire.png?url=http://facebook.com&width=1280&height=800`
+
 `GET /stats.json`
 
 ## Development
