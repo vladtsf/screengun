@@ -12,8 +12,10 @@ App Stats
 
 ## Production
 
-`gem install foreman`
-`foreman start -c web=12`
+```
+gem install foreman
+foreman start -c web=12
+```
 
 [more about Foreman](http://blog.daviddollar.org/2011/05/06/introducing-foreman.html)
 
