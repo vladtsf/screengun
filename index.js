@@ -50,11 +50,11 @@ app.get("/stats.json", function(req, res) {
   res.json({
     last_cleanup: app.get("stats:last_cleanup"),
     temp: app.get("stats:temp"),
-    memory: process.memoryUsage()
+    memory: process.memoryUsage(),
+    version: pkg.version,
+    backend_port: server.address().port
   })
 })
-
-
 
 setInterval(function() {
   temp.cleanup(function(err, stats) {
@@ -68,7 +68,6 @@ var server = app.listen(process.env.PORT || 3000, function () {
   var port = server.address().port
 
   console.log('screengun is listening at http://%s:%s', host, port)
-  console.log('USAGE: GET /fire.png?url=http://facebook.com&width=1280&height=800')
 })
 
 
