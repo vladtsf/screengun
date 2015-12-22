@@ -14,6 +14,8 @@ temp.track()
 app.use(morgan('combined', {stream: process.stdout}))
 
 app.get('/fire.png', function (req, res) {
+  res.set('X-SCREENGUN-BACKEND', server.address().port);
+
   if(!req.query.url) {
     return res.status(404).send("Not Found");
   }
